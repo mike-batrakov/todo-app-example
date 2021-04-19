@@ -1,7 +1,8 @@
 .completed {
-    color: #d9d9d9;
+  color: #d9d9d9;
+  text-decoration: line-through;
 }
 
 .todo-list p {
-    transition: color 0.4s
+  transition: color 0.4s;
 }
