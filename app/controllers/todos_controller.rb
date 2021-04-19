@@ -1,5 +1,5 @@
 class TodosController < ApplicationController
-  before_action :set_todo, only: [:update, :destroy]
+  before_action :set_todo, only: %i[update destroy]
 
   def index
     @todos = Todo.all
