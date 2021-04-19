@@ -9,13 +9,11 @@ export const CreateTodo = ({ onCreate }) => {
 
     const handleCreate = React.useCallback(e => {
         e.preventDefault();
-        todoStore.addTodo(text);
-        // console.log('event value', e.target.value)
-        // console.log('event', e)
         // To create a todo, we must add it to the todoStore.
         // take a look at todoStore.js, and determine how to do add
         // a todo
         // throw new Error("Not yet implemented");
+        todoStore.addTodo(text);
 
         setText("");
     }, [onCreate, setText, text]);
